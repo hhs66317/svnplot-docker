@@ -6,14 +6,16 @@ RUN apt-get update && apt-get install -y \
 	python-pip \
 	python-svn \
 	subversion \
-	svn-workbench
+	svn-workbench 
 
 RUN pip install \
 	numpy \
 	matplotlib
 
-ENV SNVPLOT_VERSION 0.8.9
-ENV SVNPLOT_DOWNLOAD_URL https://bitbucket.org/nitinbhide/svnplot/downloads/SVNPlot-$SVNPLOT_VERSION-py2-none-any.whl
+ENV SVNPLOT_VERSION 0.8.10
+#https://bitbucket.org/sww314/svnplot/downloads/SVNPlot-0.8.10-py2-none-any.whl
+# This does not work... :(
+#ENV SVNPLOT_DOWNLOAD_URL -e hg:https://sww314@bitbucket.org/sww314/svnplot
 
-RUN pip install $SVNPLOT_DOWNLOAD_URL 
+RUN pip install https://bitbucket.org/sww314/svnplot/downloads/SVNPlot-$SVNPLOT_VERSION-py2-none-any.whl
 
