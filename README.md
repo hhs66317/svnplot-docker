@@ -5,9 +5,9 @@
 
 ## To use:
 
-```root@c89d2629483a:~# python /usr/local/lib/python2.7/dist-packages/svnplot/svnlog2sqlite.py --user USER --password XXXXX  https://SVN_URL/AAA/ XXXX.db 
+```root@c89d2629483a:~# python /usr/local/lib/python2.7/dist-packages/svnplot/svnlog2sqlite.py --user USER --password XXXXX  https://SVN_URL/AAA/ XXXX.db```
 
- python svnplot/src/svnplot/svnplot.py -n "XXXXX" XXXXX.db graphs```
+ ```python svnplot/src/svnplot/svnplot.py -n "XXXXX" XXXXX.db graphs```
 
 ## To build:
 
