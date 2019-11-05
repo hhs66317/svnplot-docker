@@ -12,7 +12,7 @@ RUN pip install \
 	numpy \
 	matplotlib
 
-ENV SVNPLOT_VERSION 0.8.10
+ENV SVNPLOT_VERSION 0.9.0
 #https://bitbucket.org/sww314/svnplot/downloads/SVNPlot-0.8.10-py2-none-any.whl
 # This does not work... :(
 #ENV SVNPLOT_DOWNLOAD_URL -e hg:https://sww314@bitbucket.org/sww314/svnplot
